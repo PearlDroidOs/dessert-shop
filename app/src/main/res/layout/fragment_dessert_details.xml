@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.DessertDetailsFragment">
+
+    <include layout="@layout/action_bar_customize"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="@string/start_picking"
+        android:textColor="@color/colorBack"
+        android:textSize="@dimen/title_shop" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scroll_dessert_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/tv_new_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_margin="5dp"
+                android:text="@string/str_new"
+                android:textColor="@color/colorRed"
+                android:textSize="@dimen/new_size_size" />
+
+
+            <ImageView
+                android:id="@+id/iv_dessert_details"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginBottom="5dp"
+                android:padding="10dp" />
+
+
+            <TextView
+                android:id="@+id/tv_dessert_name_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_margin="5dp"
+                android:text="@string/dessert_name"
+                android:textColor="@color/colorBack"
+                android:textSize="@dimen/dessert_name_details_size" />
+
+            <TextView
+                android:id="@+id/tv_price_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_margin="5dp"
+                android:text="@string/price"
+                android:textColor="@color/colorRed"
+                android:textSize="@dimen/price_details_size" />
+
+            <TextView
+                android:id="@+id/tv_dessert_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_margin="5dp"
+                android:text="@string/dessert_name"
+                android:textColor="@color/colorBackGrey"
+                android:textSize="@dimen/dessert_details_size" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>
