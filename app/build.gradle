@@ -41,7 +41,7 @@ dependencies {
     implementation 'com.google.code.gson:gson:2.8.5'
     implementation "android.arch.navigation:navigation-fragment-ktx:$nav_version"
     implementation "android.arch.navigation:navigation-ui-ktx:$nav_version"
-    // Optional -- Mockito framework
+    //Mockito framework
     testImplementation 'org.mockito:mockito-core:1.10.19'
 
 }
