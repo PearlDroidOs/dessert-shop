@@ -3,6 +3,14 @@ package com.pearldroidos.dessertshop
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
+
+/**
+ * MainActivity is only once
+ *
+ * Application is used by fragment
+ *
+ * Created by Pearl DroidOs
+ */
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {

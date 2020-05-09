@@ -1,9 +1,6 @@
 package com.pearldroidos.dessertshop.presenter
 
-import android.content.Context
 import android.os.Bundle
-import android.util.Log
-import android.view.KeyEvent
 import android.view.View
 import androidx.navigation.findNavController
 import com.pearldroidos.dessertshop.R
@@ -12,33 +9,42 @@ import com.pearldroidos.dessertshop.model.DessertModel
 import com.pearldroidos.dessertshop.model.enum.GlobalEnum
 import com.pearldroidos.dessertshop.presenter.utils.JsonUtils
 
-class DessertDetailsPresenter(_callBack: DessertDetailsCallBack,_context: Context) {
+/**
+ * DessertDetailsPresenter is a presenter which informs and updates between view and service
+ *
+ * Use between 'DessertDetailsPresenter' class and 'DessertDetailsFragment' class
+ *
+ * Created by Pearl DroidOs
+ */
+class DessertDetailsPresenter(_callBack: DessertDetailsCallBack) {
     private val callBack = _callBack
-    private val context =_context
-    private var param: String? = null
+
+    //Kept this information to easily handle in the future
     private lateinit var dessert: DessertModel
 
-
-    fun setView(bundle: Bundle?) {
+    //Receive bundle from main view (Unpacking data)
+    fun getData(bundle: Bundle?) {
+        var param: String? = null
         bundle?.let {
-            param = it.getString(GlobalEnum.INFORMATION.name)
+            param = it.getString(GlobalEnum.INFORMATION.name) //Unpack data by key
         }
-        dessert = JsonUtils.covertJSONToObject(param!!, DessertModel::class.java)
-
-        Log.d("Test", " JSON Details Fragment: $param")
-        Log.d("Test", " Class Details Fragment : $dessert")
-
-        val visibility = if (dessert.isNewProduct) View.VISIBLE else View.GONE
-        callBack.initializeView(dessert, visibility)
+        dessert = JsonUtils.covertJSONToObject(param!!, DessertModel::class.java) // Convert string data to 'DessertModel' class
     }
 
+    //Set detail view
+    fun setView(){
+        //Use callback to contact view
+        callBack.initializeView(dessert, if(dessert.isNewProduct) View.VISIBLE else View.GONE)
+    }
+
+    //Go to main view
     fun navigateToMainDesserts(view:View){
         view.findNavController().navigate(R.id.mainFragment)
     }
 
+    //Set customized action bar
     fun setActionBar(){
-        val title = context.getString(R.string.product_title)
-        callBack.setActionBar(title, View.VISIBLE)
+        callBack.setActionBar()
     }
 
 

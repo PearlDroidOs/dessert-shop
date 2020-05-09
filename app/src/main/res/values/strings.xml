@@ -11,9 +11,7 @@
     <string name="ok">OK</string>
     <string name="refresh">Refresh</string>
 
-
     <string name="product_title">Products</string>
+    <string name="detail_title">Details</string>
     <string name="back">Back</string>
-
-
 </resources>
