@@ -1,4 +1,4 @@
-# dessert-shop
+# Dessert shop
    This project is used to answer an Ascend Commerce Mobile Developer exam
 
 # How to run the application
