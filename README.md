@@ -62,6 +62,8 @@ Tutorial 6: Refresh views
   ```
   MainActivity
      |____MainFragment -- MainPresenter -- [ Model | LoadInformationService | LoadImageService ]
+            |
+            |
             |___DessertDetailsFragment -- DessertDetailsPresenter -- Model
   ```
 
