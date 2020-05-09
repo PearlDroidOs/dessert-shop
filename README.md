@@ -32,21 +32,27 @@ def nav_version = "2.3.0-alpha06"
 # Tutorial UI of the project
 
 Tutorial 1: Loading data
+
 <img src="https://github.com/PearlDroidOs/dessert-shop/blob/master/app/sampledata/tu_1.png" width="40%" height="40%">
 
 Tutorial 2: Data list views
+
 <img src="https://github.com/PearlDroidOs/dessert-shop/blob/master/app/sampledata/tu_2.png" width="40%" height="40%">
 
 Tutorial 3: Data Detail views
+
 <img src="https://github.com/PearlDroidOs/dessert-shop/blob/master/app/sampledata/tu_3.png" width="40%" height="40%">
 
 Tutorial 4: Data Detail views in unimage case
+
 <img src="https://github.com/PearlDroidOs/dessert-shop/blob/master/app/sampledata/tu_4.png" width="40%" height="40%">
 
 Tutorial 5: Internet handle with dialog
+
 <img src="https://github.com/PearlDroidOs/dessert-shop/blob/master/app/sampledata/tu_5.png" width="40%" height="40%">
 
-Tutorial 6: Internet handle with dialog
+Tutorial 6: Refresh views
+
 <img src="https://github.com/PearlDroidOs/dessert-shop/blob/master/app/sampledata/tu_6.png" width="40%" height="40%">
 
 # Project pattern
