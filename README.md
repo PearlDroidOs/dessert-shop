@@ -4,7 +4,7 @@
 # How to run the application
 ```
 1. Download Zip File
-2. Unzip and open on Android Studio
+2. Unzip and open it on Android Studio
 3. Click Run on AVD or your device
 ```
 
@@ -43,7 +43,7 @@ Tutorial 3: Data Detail views
 
 <img src="https://github.com/PearlDroidOs/dessert-shop/blob/master/app/sampledata/tu_3.png" width="40%" height="40%">
 
-Tutorial 4: Data Detail views in unimage case
+Tutorial 4: Data Detail views in unload image case
 
 <img src="https://github.com/PearlDroidOs/dessert-shop/blob/master/app/sampledata/tu_4.png" width="40%" height="40%">
 
@@ -57,6 +57,12 @@ Tutorial 6: Refresh views
 
 # Project pattern
   
-  Developer used one activity and 2 fragment as below
+  Developer used one activity and 2 fragments which has a project structure as below
+  
+  ```
+  MainActivity
+     |____MainFragment -- MainPresenter -- [ Model | LoadInformationService | LoadImageService ]
+            |___DessertDetailsFragment -- DessertDetailsPresenter -- Model
+  ```
 
 <img src="https://github.com/PearlDroidOs/dessert-shop/blob/master/app/sampledata/tu_7.png" width="40%" height="40%">
